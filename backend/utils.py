@@ -44,7 +44,7 @@ def ask_deep_search(query):
             },
             {"role": "user", "content": query}
         ],
-        "reasoning_effort": "low",
+        "reasoning_effort": "high",
         "no_direct_answer": True
     }
     response = requests.post('https://deepsearch.jina.ai/v1/chat/completions', headers=headers, json=data)
